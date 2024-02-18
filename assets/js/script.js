@@ -51,7 +51,7 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
-select.addEventListener("click", function () { elementToggleFunc(this); });
+select.addEventListener("click", function () { elementToggleFunc(any); });
 
 
 // contact form variables
