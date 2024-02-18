@@ -51,8 +51,6 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
-select.addEventListener("click")
-
 
 // contact form variables
 const form = document.querySelector("[data-form]");
