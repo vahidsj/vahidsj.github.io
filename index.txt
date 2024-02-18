@@ -22,10 +22,10 @@ Sacramento, California, USA
 
 # navbar
 
-About
+Home
 Resume
-Portfolio
-Blog
+Research
+Meeting
 Contact
 
 # about
