@@ -2,7 +2,7 @@ vCard - Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
+alt = Vahid Sadiri Javadi
 Richard hanrick
 Web developer
 
