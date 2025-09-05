@@ -1452,48 +1452,147 @@
       </article>
 
       
-      <!--
-        - #CONTACT
-      -->
-
       <article class="contact" data-page="contact">
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+  <header>
+    <h2 class="h2 article-title" style="text-align:center; margin-bottom:30px;">Contact</h2>
+  </header>
 
-        <section class="mapbox" data-mapbox>
-          <figure>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
-              width="400" height="300" loading="lazy"></iframe>
-          </figure>
-        </section>
+  <section class="mapbox" data-mapbox>
+    <figure style="margin:0;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2510.223124264134!2d7.085659376332654!3d50.73743037952915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bf268c0f878b9b%3A0x40099ab0f2f4d30!2sBonn%2C%20Germany!5e0!3m2!1sen!2sus!4v1693939500000!5m2!1sen!2sus"
+        width="100%" height="350" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy"></iframe>
+    </figure>
+  </section>
 
-        <section class="contact-form">
+  <section class="contact-form" style="margin-top:40px;">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+    <form action="#" class="form" data-form style="max-width:600px; margin:0 auto; background:#fff; padding:30px; border-radius:15px; box-shadow:0 15px 30px rgba(0,0,0,0.1);">
 
-          <form action="#" class="form" data-form>
+      <h3 style="text-align:center; margin-bottom:20px; font-weight:700; color:#333;">Get in Touch</h3>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+      <!-- Full Name -->
+      <div class="floating-input">
+        <input type="text" name="fullname" placeholder=" " required>
+        <label>Full Name</label>
+        <ion-icon name="person-outline"></ion-icon>
+      </div>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+      <!-- Email -->
+      <div class="floating-input">
+        <input type="email" name="email" placeholder=" " required>
+        <label>Email Address</label>
+        <ion-icon name="mail-outline"></ion-icon>
+      </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+      <!-- Message -->
+      <div class="floating-input">
+        <textarea name="message" placeholder=" " required></textarea>
+        <label>Your Message</label>
+        <ion-icon name="chatbubbles-outline"></ion-icon>
+      </div>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+      <!-- Button -->
+      <button type="submit">
+        <ion-icon name="paper-plane-outline"></ion-icon>
+        <span>Send Message</span>
+      </button>
 
-          </form>
+    </form>
 
-        </section>
+  </section>
 
-      </article>
+</article>
+
+<style>
+  .floating-input {
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  .floating-input input,
+  .floating-input textarea {
+    width: 100%;
+    padding: 14px 15px 14px 40px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s;
+    background: #fff;
+  }
+
+  .floating-input textarea {
+    min-height: 140px;
+    resize: vertical;
+  }
+
+  .floating-input label {
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+    pointer-events: none;
+    transition: all 0.3s;
+    background: #fff;
+    padding: 0 4px;
+  }
+
+  .floating-input input:focus + label,
+  .floating-input input:not(:placeholder-shown) + label,
+  .floating-input textarea:focus + label,
+  .floating-input textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    left: 12px;
+    font-size: 12px;
+    color: #2575fc;
+  }
+
+  .floating-input ion-icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 18px;
+  }
+
+  .form button {
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  .form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+
+  .form button:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+
+  .form input:focus,
+  .form textarea:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 10px rgba(37,117,252,0.3);
+  }
+</style>
 
     </div>
 
