@@ -911,131 +911,173 @@
         </section>
 
         
-        <!--
-          - service
-        -->
+        <!-- ===== ACTIVITIES SECTION ===== -->
+<section class="activities">
 
-        <section class="service">
+  <h3 class="h3 activities-title">ACTIVITIES</h3>
 
-          <h3 class="h3 service-title">ACTIVITIES</h3>
+  <ul class="activities-list">
 
-          <ul class="service-list has-scrollbar">
+    <li class="activities-item">
+      <div class="icon-box">
+        <img src="./assets/images/May_2023.png" alt="SIGDIAL 2023" width="50">
+      </div>
+      <div class="content-box">
+        <h4 class="h4 item-title">Our paper at SIGDIAL 2023</h4>
+        <p class="item-text">
+          I presented our paper: OpinionConv: Conversational Product Search with Grounded Opinions at SIGDIAL in Prague, Czech Republic!
+        </p>
+      </div>
+    </li>
 
-            <li class="service-item">
+    <li class="activities-item">
+      <div class="icon-box">
+        <img src="./assets/images/Jan_2024.png" alt="AMC CUI 2024" width="50">
+      </div>
+      <div class="content-box">
+        <h4 class="h4 item-title">AMC CUI 2024</h4>
+        <p class="item-text">
+          My paper was accepted: Unveiling Information Through Narrative In Conversational Information Seeking in Luxembourg.
+        </p>
+      </div>
+    </li>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/May_2023.png" alt="Web development icon" width="40">
-              </div>
+    <li class="activities-item">
+      <div class="icon-box">
+        <img src="./assets/images/Jan_2024.png" alt="LAMARR" width="50">
+      </div>
+      <div class="content-box">
+        <h4 class="h4 item-title">THE LAMARR CONFERENCE</h4>
+        <p class="item-text">
+          I had participated in FEATURING INDUSTRIAL AI & LOGISTICS in Dortmund.
+        </p>
+      </div>
+    </li>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Our paper at SIGDIAL 2023</h4>
+    <li class="activities-item">
+      <div class="icon-box">
+        <img src="./assets/images/Jan_2024.png" alt="ScaDS.AI" width="50">
+      </div>
+      <div class="content-box">
+        <h4 class="h4 item-title">ScaDS.AI</h4>
+        <p class="item-text">
+          I had participated in All Hands Meeting of the German AI Community in Dresden.
+        </p>
+      </div>
+    </li>
 
-                <p class="service-item-text">
-                  I presented our paper: OpinionConv: Conversational Product Search with Grounded Opinions at SIGDIAL in Prague, Czech Republic!
-                </p>
-              </div>
+    <li class="activities-item">
+      <div class="icon-box">
+        <img src="./assets/images/Jan_2024.png" alt="META" width="50">
+      </div>
+      <div class="content-box">
+        <h4 class="h4 item-title">META</h4>
+        <p class="item-text">
+          I had participated in the META meeting in Belgium.
+        </p>
+      </div>
+    </li>
 
-              </li>
+    <li class="activities-item">
+      <div class="icon-box">
+        <img src="./assets/images/May_2023.png" alt="NeurIPS 2024" width="50">
+      </div>
+      <div class="content-box">
+        <h4 class="h4 item-title">NeurIPS 2024</h4>
+        <p class="item-text">
+          My paper was accepted: in Vancouver.
+        </p>
+      </div>
+    </li>
 
-            <li class="service-item">
+    <li class="activities-item">
+      <div class="icon-box">
+        <img src="./assets/images/March_2022.png" alt="SCoLA 2025" width="50">
+      </div>
+      <div class="content-box">
+        <h4 class="h4 item-title">SCoLA 2025</h4>
+        <p class="item-text">
+          I presented Subjective Debate as Conversational Search: Simulating Sales Negotiations Grounded in Preferences in Montreal.
+        </p>
+      </div>
+    </li>
 
-              <div class="service-icon-box">
-                <img src="./assets/images/Jan_2024.png" alt="mobile app icon" width="40">
-              </div>
+  </ul>
+</section>
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">AMC CUI 2024</h4>
+<style>
+  :root {
+    --card-bg: #171a21;
+    --card-text: #d8dbe2;
+    --accent: #f6c04b;
+    --shadow: 0 6px 20px rgba(0,0,0,.4);
+    --radius: 14px;
+  }
 
-                <p class="service-item-text">
-                  My paper was accepted: Unveiling Information Through Narrative In Conversational Information Secking in Luxembourg.
-                </p>
-              </div>
+  .activities-title {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--accent);
+    padding-left: 10px;
+  }
 
-              </li>
+  .activities-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 
-            <li class="service-item">
+  .activities-item {
+    display: flex;
+    gap: 15px;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    padding: 18px;
+    align-items: flex-start;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: transform .2s ease, box-shadow .2s ease;
+  }
 
-              <div class="service-icon-box">
-                <img src="./assets/images/Jan_2024.png" alt="mobile app icon" width="40">
-              </div>
+  .activities-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0,0,0,.6);
+  }
 
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">THE LAMARR CONFERENCE</h4>
+  .icon-box img {
+    border-radius: 10px;
+    border: 2px solid var(--accent);
+    background: #000;
+  }
 
-                <p class="service-item-text">
-                  I had participated in FEATURING INDUSTRIAL AI & LOGISTICS in Dortmund.
-                </p>
-              </div>
+  .item-title {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 0 6px;
+  }
 
-              </li>
+  .item-text {
+    color: var(--card-text);
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+  }
 
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/Jan_2024.png" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">ScaDS.Al</h4>
-
-                <p class="service-item-text">
-                  I had participated in All Hands Meeting of the German AI Community in Dresden.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/Jan_2024.png" alt="mobile app icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">META</h4>
-
-                <p class="service-item-text">
-                  I had participated in the META meeting in Belgium.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/May_2023.png" alt="camera icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">NeurIPS 2024</h4>
-
-                <p class="service-item-text">
-                  My paper was accepted: in Vancouver.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/March_2022.png" alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">SCoLA 2025</h4>
-
-                <p class="service-item-text">
-                  I presented Subjective Debate as Conversational Search: Simulating Sales Negotiations Grounded in Preferences in Montreal.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
+  @media (max-width: 600px) {
+    .activities-item {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .icon-box img {
+      width: 60px;
+    }
+  }
+</style>
 
         
         <!--
