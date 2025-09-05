@@ -1073,117 +1073,66 @@
       </article>
 
        
-      <!-- ===== TEACHING SECTION ===== -->
+      <!-- ===== TEACHING SECTION (SAME STYLE AS RESUME) ===== -->
 <article class="teaching" data-page="teaching">
-
-  <style>
-    :root{
-      --bg: #0f1115;
-      --card:#171a21;
-      --text:#d8dbe2;
-      --muted:#9aa3b2;
-      --accent:#f6c04b;
-      --line:#2a2f3a;
-      --shadow: 0 8px 28px rgba(0,0,0,.45);
-      --radius: 16px;
-    }
-    .teaching{background:var(--bg); padding:24px;}
-    .teaching *{box-sizing:border-box;}
-    .teaching .article-title{
-      color:#fff; font-size:32px; margin:0 0 18px 0;
-    }
-    .tl-card{
-      background:var(--card);
-      border-radius:var(--radius);
-      padding:22px;
-      box-shadow:var(--shadow);
-      border:1px solid rgba(255,255,255,.04);
-    }
-    .timeline{
-      position:relative; margin:12px 0 0;
-      padding-left:26px;
-    }
-    .timeline::before{
-      content:""; position:absolute; left:10px; top:0; bottom:0;
-      width:2px; background:var(--line); border-radius:2px;
-    }
-    .tl-item{position:relative; padding:18px 0;}
-    .tl-item::before{
-      content:""; position:absolute; left:-2px; top:26px;
-      width:12px; height:12px; border-radius:50%;
-      background:var(--accent); box-shadow:0 0 0 4px rgba(246,192,75,.12);
-    }
-    .tl-head{display:flex; flex-wrap:wrap; gap:10px; align-items:center;}
-    .tl-title{color:#fff; font-size:20px; font-weight:700; margin:0;}
-    .tl-date{color:var(--accent); font-weight:700; margin-left:auto; font-size:14px;}
-    .tl-body{margin-top:10px; color:var(--text); line-height:1.6; font-size:15px;}
-    .tl-body .dash{display:block; margin-top:4px; color:var(--muted);}
-    .tl-loc{margin-top:8px; color:var(--muted); font-size:14px;}
-    .tl-item + .tl-item{border-top:1px dashed rgba(255,255,255,.06);}
-    @media (max-width:520px){
-      .teaching{padding:18px;}
-      .teaching .article-title{font-size:28px;}
-      .tl-card{padding:18px;}
-      .tl-date{width:100%; margin:4px 0 0 0;}
-    }
-  </style>
 
   <header>
     <h2 class="h2 article-title">Teaching</h2>
   </header>
 
-  <section class="tl-card">
-    <div class="timeline">
+  <section class="timeline">
 
-      <div class="tl-item">
-        <div class="tl-head">
-          <h3 class="tl-title">University of Bonn — Teaching Assistant</h3>
-          <div class="tl-date">10.2023 — Present</div>
-        </div>
-        <div class="tl-body">
-          <span class="dash">• Course: Natural Language Processing (M.Sc.)</span>
-          <span class="dash">• Duties: Tutorials, grading, project mentoring</span>
-          <div class="tl-loc">Germany, Bonn</div>
-        </div>
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
       </div>
-
-      <div class="tl-item">
-        <div class="tl-head">
-          <h3 class="tl-title">Chemnitz University of Technology — Tutor</h3>
-          <div class="tl-date">04.2021 — 09.2021</div>
-        </div>
-        <div class="tl-body">
-          <span class="dash">• Course: Data Mining & Machine Learning</span>
-          <span class="dash">• Led exercise sessions, prepared assignments</span>
-          <div class="tl-loc">Germany, Chemnitz</div>
-        </div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-head">
-          <h3 class="tl-title">FAU Erlangen-Nürnberg — Guest Lecturer</h3>
-          <div class="tl-date">10.2019 — 02.2020</div>
-        </div>
-        <div class="tl-body">
-          <span class="dash">• Seminar: Applied Text Analytics</span>
-          <span class="dash">• Delivered lectures + project reviews</span>
-          <div class="tl-loc">Germany, Erlangen</div>
-        </div>
-      </div>
-
-      <div class="tl-item">
-        <div class="tl-head">
-          <h3 class="tl-title">Ferdowsi University of Mashhad — TA</h3>
-          <div class="tl-date">09.2011 — 07.2012</div>
-        </div>
-        <div class="tl-body">
-          <span class="dash">• Course: Systems Planning & Analysis</span>
-          <span class="dash">• Assisted with labs and grading</span>
-          <div class="tl-loc">Iran, Mashhad</div>
-        </div>
-      </div>
-
+      <h3 class="h3">Teaching Experience</h3>
     </div>
+
+    <ol class="timeline-list">
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">University of Bonn — Teaching Assistant</h4>
+        <span>10.2023 — Present</span>
+        <p class="timeline-text">
+          • Course: Natural Language Processing (M.Sc.) <br>
+          • Duties: Tutorials, grading, project mentoring <br>
+          Germany, Bonn
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Chemnitz University of Technology — Tutor</h4>
+        <span>04.2021 — 09.2021</span>
+        <p class="timeline-text">
+          • Course: Data Mining & Machine Learning <br>
+          • Led exercise sessions, prepared assignments <br>
+          Germany, Chemnitz
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">FAU Erlangen-Nürnberg — Guest Lecturer</h4>
+        <span>10.2019 — 02.2020</span>
+        <p class="timeline-text">
+          • Seminar: Applied Text Analytics <br>
+          • Delivered lectures + project reviews <br>
+          Germany, Erlangen
+        </p>
+      </li>
+
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Ferdowsi University of Mashhad — TA</h4>
+        <span>09.2011 — 07.2012</span>
+        <p class="timeline-text">
+          • Course: Systems Planning & Analysis <br>
+          • Assisted with labs and grading <br>
+          Iran, Mashhad
+        </p>
+      </li>
+
+    </ol>
+
   </section>
 </article>
 
