@@ -221,21 +221,45 @@ RESEARCH AREA<!DOCTYPE html>
   </h3>
   
   <div style="margin-top: 30px; text-align: center;">
+    <!-- قاب اصلی -->
     <div style="
-        display: inline-block;          
-        padding: 8px;                   
-        border: 3px solid #FFA500;      
-        border-radius: 15px;            
-        box-shadow: 0 6px 18px rgba(255,165,0,0.4); 
-        background: transparent;        
-        transition: transform 0.3s, box-shadow 0.3s; 
-    " 
+        display: inline-block;
+        border: 3px solid #FFA500;
+        border-radius: 15px;
+        box-shadow: 0 6px 18px rgba(255,165,0,0.4);
+        background: transparent;
+        transition: transform 0.3s, box-shadow 0.3s;
+        overflow: hidden; /* مهم برای اینکه فوتر داخل قاب باشه */
+    "
     onmouseover="this.style.transform='scale(1.03)'; this.style.boxShadow='0 10px 25px rgba(255,165,0,0.6)';"
     onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 6px 18px rgba(255,165,0,0.4)';">
-    
+
+        <!-- تصویر -->
         <img src="./assets/images/RESEARCH AREA.jpg" 
              alt="Research Illustration" 
-             style="max-width: 500px; width: 100%; height: auto; border-radius: 10px; display: block; margin: auto;">
+             style="max-width: 500px; width: 100%; height: auto; display: block; margin: auto; border-bottom: 0;">
+
+        <!-- فوتر مشکی با دکمه -->
+        <div style="
+            background-color: #000;
+            padding: 10px;
+            text-align: center;
+        ">
+            <button style="
+                padding: 8px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #FFA500;
+                color: #fff;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background 0.3s;
+            "
+            onmouseover="this.style.backgroundColor='#ffbf00';"
+            onmouseout="this.style.backgroundColor='#FFA500';">
+                CLICK ME
+            </button>
+        </div>
     </div>
 </div>
 </header>
