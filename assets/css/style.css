@@ -2231,3 +2231,8 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* Option A: clip-path (very reliable) */
+.sidebar{
+  clip-path: inset(0 round 20px);
+}
