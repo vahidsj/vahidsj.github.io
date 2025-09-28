@@ -18,17 +18,6 @@ function initializeEventListeners() {
     sidebarBtn.setAttribute('data-listener-added', 'true');
   }
 
-  // mobile menu toggle functionality
-  const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
-  const navbarList = document.querySelector(".navbar-list");
-
-  if (navToggleBtn && !navToggleBtn.hasAttribute('data-listener-added')) {
-    navToggleBtn.addEventListener("click", function () {
-      elementToggleFunc(navbarList);
-      elementToggleFunc(navToggleBtn);
-    });
-    navToggleBtn.setAttribute('data-listener-added', 'true');
-  }
 
   // testimonials variables
   const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
