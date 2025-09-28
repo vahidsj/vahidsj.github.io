@@ -1691,10 +1691,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
   
   .icon-box {
-    position: relative;
+    flex-shrink: 0;
     background: none;
-    width: auto;
-    height: auto;
+    width: 80px;
+    height: 100px;
     border-radius: 0;
     display: flex;
     justify-content: center;
@@ -1710,17 +1710,16 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
   
   .icon-box img {
-    border-radius: 10px;
-    width: 150px;
-    height: 100px;
+    border-radius: 15px;
+    width: 220px;
+    height: 130px;
     object-fit: cover;
-    background: var(--eerie-black-2);
     padding: 10px;
-    border: 1px solid var(--jet);
-    position: absolute;
-    top: 50%;
-    right: 20px;
-    transform: translateY(-50%);
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    margin-right: -100px;
   }
   
   .content-box {
