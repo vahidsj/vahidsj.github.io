@@ -67,6 +67,11 @@ class ComponentLoader {
             // Update active navigation state
             this.updateNavigationState(pageName);
             
+            // Reinitialize event listeners for dynamically loaded content
+            if (typeof initializeEventListeners === 'function') {
+                initializeEventListeners();
+            }
+            
             console.log(`Page ${pageName} loaded successfully`);
         } catch (error) {
             console.error(`Error loading page ${pageName}:`, error);
