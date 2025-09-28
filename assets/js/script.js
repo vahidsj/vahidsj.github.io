@@ -18,7 +18,6 @@ function initializeEventListeners() {
     sidebarBtn.setAttribute('data-listener-added', 'true');
   }
 
-
   // testimonials variables
   const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
   const modalContainer = document.querySelector("[data-modal-container]");
@@ -38,20 +37,26 @@ function initializeEventListeners() {
     }
   }
 
-  // add click event to all modal items (only if not already added)
-  for (let i = 0; i < testimonialsItem.length; i++) {
-    if (!testimonialsItem[i].hasAttribute('data-listener-added')) {
-      testimonialsItem[i].addEventListener("click", function () {
-        if (modalImg && modalTitle && modalText) {
-          modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
-          modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
-          modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
-          modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
-        }
-        testimonialsModalFunc();
-      });
-      testimonialsItem[i].setAttribute('data-listener-added', 'true');
-    }
+  // Remove existing event listeners first to prevent duplicates
+  testimonialsItem.forEach(item => {
+    const newItem = item.cloneNode(true);
+    item.parentNode.replaceChild(newItem, item);
+  });
+
+  // Get fresh references after cloning
+  const freshTestimonialsItem = document.querySelectorAll("[data-testimonials-item]");
+
+  // add click event to all modal items
+  for (let i = 0; i < freshTestimonialsItem.length; i++) {
+    freshTestimonialsItem[i].addEventListener("click", function () {
+      if (modalImg && modalTitle && modalText) {
+        modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
+        modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+        modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+        modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+      }
+      testimonialsModalFunc();
+    });
   }
 
   // add click event to modal close button (only once)
