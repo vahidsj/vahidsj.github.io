@@ -520,6 +520,7 @@ article.active {
       align-items: center;
       text-align: center;
       gap: 15px;
+      padding: 20px;
     }
     
     .icon-box {
@@ -528,6 +529,7 @@ article.active {
       height: auto;
       border-radius: 0;
       position: relative;
+      order: 1;
     }
     
     .icon-box::before {
@@ -543,6 +545,16 @@ article.active {
       background: var(--eerie-black-2);
       padding: 10px;
       border: 1px solid var(--jet);
+      position: relative;
+      top: auto;
+      right: auto;
+      transform: none;
+    }
+    
+    .content-box {
+      order: 2;
+      width: 100%;
+      text-align: center;
     }
     
     /* Ensure sidebar shows all social media icons on small mobile screens */
@@ -1636,6 +1648,35 @@ textarea.form-input::-webkit-resizer { display: none; }
     padding: 8px 5px;
     flex: 1;
     min-width: 0;
+    text-align: center;
+  }
+  
+  /* Fix activities layout for tablet/mobile */
+  .activities-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .icon-box {
+    position: relative;
+    order: 1;
+  }
+  
+  .icon-box img {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: none;
+    width: 140px;
+    height: 90px;
+  }
+  
+  .content-box {
+    order: 2;
+    width: 100%;
     text-align: center;
   }
   
