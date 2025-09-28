@@ -544,6 +544,15 @@ article.active {
       padding: 10px;
       border: 1px solid var(--jet);
     }
+    
+    /* Ensure sidebar shows all social media icons on small mobile screens */
+    .sidebar.active { 
+      max-height: 700px; 
+    }
+    
+    .sidebar {
+      max-height: 220px;
+    }
   }
 
 
@@ -1628,6 +1637,15 @@ textarea.form-input::-webkit-resizer { display: none; }
     flex: 1;
     min-width: 0;
     text-align: center;
+  }
+  
+  /* Fix sidebar height for mobile to show all social media icons */
+  .sidebar.active { 
+    max-height: 650px; 
+  }
+  
+  .sidebar {
+    max-height: 200px;
   }
 }
 
